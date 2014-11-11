@@ -53,13 +53,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % macros    macros    macros    macros   macros    macros    macros    macros   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newcommand\E{\Epsilon}
 \newcommand\header[1]{\fancyhead[L]{\scriptsize\bf\center #1}}
 \newcommand\h[1]{{\vspace{0.5\baselineskip}\centering\subheadingfont\Large#1\par\vspace{0.2\baselineskip}}}
-%\newcommand\sh[1]{{\vspace{0.5\baselineskip}\subheadingfont\large#1}}
-\titleformat{name = \section, numberless}
-{\subheadingfont\large}
-{}{0em}{}
 \titlespacing\section{0pt}{6pt}{-\parskip}
 \newcommand\sh[1]{\section*{#1}}
 \newcommand\red[1]{{\requiredfont #1}}

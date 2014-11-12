@@ -16,7 +16,15 @@ Distribution functions is CDF.
 
 \h{Discreet Random Variables}
 
-\includegraphics[scale=0.5]{./img/disscreet.jpg}
+
+ \includegraphics[scale=0.5]{./img/disscreet.jpg}
+Hypergeometric :
+\mymath{p(x)=\begin{cases} \displaystyle\frac{\binom{r}{x}\binom{n-r}{m-x}}{\binom{n}{m}} & \text{if }x=0,1,2,\dots.n\\
+0 & \text{otherwise}
+\end{cases}
+} %\mymath
+
+Probability of x successes in a sample size $m$ from sample space $n$ and a subset $r$  
 
 \includegraphics[scale=0.8]{./img/2dis.jpg}
 
@@ -187,7 +195,27 @@ The law of total probability. $f_Y(y)=*\int_{-\infty}^\infty{f_{Y|X}(y|x)f_X(x)\
 
 \sh{Expectations of functions of random variables}
 
-\ra Collolaary A: $\E(XY)=\E(X)\E(Y)$
+\ra Corollary A:  $\E(XY)=\E(X)\E(Y)$
+
+
+\sh{Expectations of linear combinations of random variables}
+
+\includegraphics[scale=0.5]{./img/412A.jpg}
+
+\obeylines
+\ra Proof for $n=2$: 
+\rn{1} Write out full expectation
+\rn{2} Multiply out and separate integrals
+\rn{3} First sums to 1
+\rn{4} Second/third sum to expected values
+\rn{5} State integral is convergent
+\disobeylines
+
+
+
+
+\sh{Variance and standard deviation}
+
 
 \h{Study Unit 5}
 

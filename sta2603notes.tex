@@ -4,11 +4,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
+\obeylines
+
 \h{STA2603 Distribution Theory II}
 
 {\red{Always specify the domain of the function!}} \hfill  {\red{Always specify the parameters when identifying the distribution!}}
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \h{Study Unit 2}
 
 Frequency Function (discreet) = density function (continuous).
@@ -18,25 +22,30 @@ Distribution functions is CDF.
 
 
  \includegraphics[scale=0.5]{./img/disscreet.jpg}
+\disobeylines
 Hypergeometric :
 \mymath{p(x)=\begin{cases} \displaystyle\frac{\binom{r}{x}\binom{n-r}{m-x}}{\binom{n}{m}} & \text{if }x=0,1,2,\dots.n\\
 0 & \text{otherwise}
 \end{cases}
 } %\mymath
 
+\obeylines
 Probability of x successes in a sample size $m$ from sample space $n$ and a subset $r$  
 
 \includegraphics[scale=0.8]{./img/2dis.jpg}
 
 $\binom{n}{x} = \displaystyle\frac{n!}{x!(n-x)!}$
+
 \sh{Bernoulli Random Variables}
 
 \vspace{6pt}
 
+\disobeylines
 Indicator random variable \mymath{I_A(\omega)=\begin{cases} 1 & \omega \in A\\
 0 & \text{otherwise}
 \end{cases}
 } %\mymath
+\obeylines
 
 \includegraphics[scale=0.6]{./img/2ber.jpg}
 
@@ -63,10 +72,13 @@ A negative binomial random variable can be expressed as the sum of \emph{r} inde
 {\sh{Hypergeometric distribution}
 \vspace{6pt}
 
+\disobeylines
 \mymath{pX(x)=\begin{cases} \displaystyle\frac{\binom{r}{x}\binom{n-r}{m-x}}{\binom{n}{m}} & \text{if }x=0,1,2,\dots.n\\
 0 & \text{otherwise}
 \end{cases}
 } %\mymath
+
+\obeylines
 
 \sh{Poisson Distribution}
 
@@ -122,8 +134,12 @@ To prove density function:
 \includegraphics[scale=0.5]{./img/2bet1.jpg}
 
 \sh{Cauchy Density}
+
+\disobeylines
+
 \mymath{f(x)=\frac{1}{\pi}\left( \frac{1}{1+x^2}\right) \quad -\infty < x < \infty
 } %\mymath
+\obeylines
 
 \h{Functions of random Variables}
 
@@ -183,44 +199,49 @@ Continuous:
 The law of total probability. $f_Y(y)=*\int_{-\infty}^\infty{f_{Y|X}(y|x)f_X(x)\,dx}$
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \h{Study Unit 4}
 \sh{Expected Value of Random Variables}
 
 \includegraphics[scale=0.5]{./img/41.jpg}
 
 \sh{Markov's Inequality}
-\mymath{P(X\ge t)\le \frac{\Epsilon(X)}{t}
-  } %\mymath
-
+$P(X\ge t)\le \frac{\Epsilon(X)}{t}$
 
 \sh{Expectations of functions of random variables}
-
 \ra Corollary A:  $\E(XY)=\E(X)\E(Y)$
 
-
 \sh{Expectations of linear combinations of random variables}
+\includegraphics[scale=0.4]{./img/412A.jpg}
 
-\includegraphics[scale=0.5]{./img/412A.jpg}
-
-\obeylines
 \ra Proof for $n=2$: 
 \rn{1} Write out full expectation
 \rn{2} Multiply out and separate integrals
 \rn{3} First sums to 1
 \rn{4} Second/third sum to expected values
 \rn{5} State integral is convergent
-\disobeylines
-
 
 \sh{Variance and standard deviation}
 
+$Var(X)=\E\left([X-\E(X)]^2\right) $
+$Var(X)=\E(X^2)-\left[E(X)\right]^2$
+
+\vspace{6pt}
+\includegraphics[scale=0.4]{./img/42.jpg}
+
+{\bf Chebyshev's Inequality}: There is a high probability that $X$ will deviate little from its mean if the variance is small.
+\includegraphics[scale=0.5]{./img/421.jpg}
 
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \h{Study Unit 5}
 
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \h{Study Unit 6}
 
 

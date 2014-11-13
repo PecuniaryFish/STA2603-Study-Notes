@@ -1,5 +1,9 @@
 \documentclass{examnotes}
 
+\newcommand{\E}{\Epsilon}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+
 \header{STA2603 Distribution Theory II}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -10,8 +14,6 @@
 
 {\red{Always specify the domain of the function!}} \hfill  {\red{Always specify the parameters when identifying the distribution!}}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \h{Study Unit 2}
 
@@ -20,16 +22,16 @@ Distribution functions is CDF.
 
 \h{Discreet Random Variables}
 
+\includegraphics[scale=0.5]{./img/disscreet.jpg}
 
- \includegraphics[scale=0.5]{./img/disscreet.jpg}
 \disobeylines
 Hypergeometric :
 \mymath{p(x)=\begin{cases} \displaystyle\frac{\binom{r}{x}\binom{n-r}{m-x}}{\binom{n}{m}} & \text{if }x=0,1,2,\dots.n\\
 0 & \text{otherwise}
 \end{cases}
 } %\mymath
-
 \obeylines
+
 Probability of x successes in a sample size $m$ from sample space $n$ and a subset $r$  
 
 \includegraphics[scale=0.8]{./img/2dis.jpg}
@@ -52,13 +54,10 @@ Indicator random variable \mymath{I_A(\omega)=\begin{cases} 1 & \omega \in A\\
 \sh{Binomial Distribution}
 
 The sum of independent Bernoulli variables is a binomial random variable. 
-
 To prove binomial probabilities sums to 1. Use finite binomial series expansion:
 \includegraphics[scale=0.7]{./img/2ber2.jpg}
 \vspace{-10pt}
-
 and therefore it is a series expansion of $[(1-p)+p]^n$
-
 \vspace{6pt}
 \sh{Geometric Distribution}
 
@@ -85,7 +84,6 @@ A negative binomial random variable can be expressed as the sum of \emph{r} inde
 To show it is a frequency function: 
 
 \includegraphics[scale=0.7]{./img/2poi1.jpg}
-
 \includegraphics[scale=0.7]{./img/2poi2.jpg}
 
 Poisson distribution can be used to approximate binomial distribution, if \emph{n} is large and \emph{p} is small.
@@ -93,11 +91,8 @@ Poisson distribution can be used to approximate binomial distribution, if \emph{
 \h{Continuous Random Variables}
 
 \includegraphics[scale=0.7]{./img/2con1.jpg}
-
 \includegraphics[scale=0.7]{./img/2con2.jpg}
-
 \includegraphics[scale=0.7]{./img/2con3.jpg}
-
 \includegraphics[scale=0.7]{./img/2con4.jpg}
 
 The $p$th quantile: $F(x_p)=p$ \quad or $P(X\le x_p)=p$ \quad and $x_p=F^{-1}(p)$
@@ -112,12 +107,9 @@ Gamma function $\Gamma(a)=\displaystyle\int_0^\infty{x^{a-1}e^{-x}}$ \quad Prope
 $\Gamma(2) = 1$ \vspace{6pt}
 
 If $\alpha=1$ then it becomes exponential density
-
-
 If $\lambda=1$ then it is a one parameter gamma density
 
 \includegraphics[scale=0.4]{./img/2gam.jpg}
-
 
 \sh{Normal (Gaussian) distribution}
 
@@ -128,9 +120,7 @@ Beta function: $B(m,n)=\displaystyle\int_0^1{x^{m-1}(1-x)^{n-1}dx}$ \quad or $B(
 To prove density function:
 
 \includegraphics[scale=0.4]{./img/2bet2.jpg}
-
 \includegraphics[scale=0.4]{./img/2bet3.jpg}
-
 \includegraphics[scale=0.5]{./img/2bet1.jpg}
 
 \sh{Cauchy Density}
@@ -149,7 +139,6 @@ Standard normal CDF $= \Phi(X)$ \quad Standard normal density $= \varphi(X)$
 if $X\mytilde N(\mu,\sigma^2)$ and $Y=aX+b$, then $Y\mytilde N(a\mu+b,a^2\sigma^2)$
 
 \includegraphics[scale=0.6]{./img/2fun1.jpg}
-
 \includegraphics[scale=0.6]{./img/2fun2.jpg}
 
 $[N(0,1)]^2\mytilde \chi^2_1$
@@ -162,7 +151,6 @@ Weibull density: $\displaystyle\frac{\beta}{\alpha^\beta}x^{\beta-1}e^{-\left(\d
 \sh{Discreet Random Variables}
 
 \includegraphics[scale=0.4]{./img/3jd1.jpg}
-
 \includegraphics[scale=0.4]{./img/3jd2.jpg}
 
 \sh{Continuous Random Variables}
@@ -170,9 +158,7 @@ Weibull density: $\displaystyle\frac{\beta}{\alpha^\beta}x^{\beta-1}e^{-\left(\d
 Marginal density.
 
 \includegraphics[scale=0.4]{./img/3con1.jpg}                                         
-
 \includegraphics[scale=0.4]{./img/3con2.jpg}                                         
-
 \includegraphics[scale=0.4]{./img/3con3.jpg}                                         
 
 \red{Marginals sum to 1}
@@ -180,7 +166,6 @@ Marginal density.
 Joint cumulative distribution.
 
 \includegraphics[scale=0.4]{./img/3con4.jpg}                                         
-
 
 \sh{Independent Random variables}
 
@@ -196,8 +181,7 @@ The law of total probability. $p_X(x)=\displaystyle\sum_y{p_{X|Y}(x|y)p_Y(y)}$
 
 Continuous:
 
-The law of total probability. $f_Y(y)=*\int_{-\infty}^\infty{f_{Y|X}(y|x)f_X(x)\,dx}$
-
+The law of total probability. $f_Y(y)=\displaystyle\int_{-\infty}^\infty{f_{Y|X}(y|x)f_X(x)\,dx}$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \h{Study Unit 4}
@@ -229,11 +213,52 @@ $Var(X)=\E(X^2)-\left[E(X)\right]^2$
 \vspace{6pt}
 \includegraphics[scale=0.4]{./img/42.jpg}
 
+\vspace{6pt}
 {\bf Chebyshev's Inequality}: There is a high probability that $X$ will deviate little from its mean if the variance is small.
+\vspace{6pt}
 \includegraphics[scale=0.5]{./img/421.jpg}
+Setting $t=k\sigma$ then $P(|X-\mu|\ge k\sigma)\le \displaystyle\frac{1}{k^2}$ or what ever is asked.
+
+\sh{Covariance}
+\disobeylines
+\mymath{Cov(X,Y) &= \E(X-\mu_X)(Y-\mu_Y) \\
+&= \E(X,Y)-\E(X)\E(Y)
+} %\mymath
+\obeylines
+\includegraphics[scale=0.5]{./img/43.jpg}
+
+If independent then: $ \E(XY)=\E(X)\E(Y)$ and covariance is $0$
+
+\includegraphics[scale=0.5]{./img/431.jpg}
+\includegraphics[scale=0.5]{./img/432.jpg}\includegraphics[scale=0.5]{./img/433.jpg}
+
+\disobeylines
+\mymath{\Var(X+Y)&=\Cov(X+Y,X+Y) \\
+&       =\Var(X) + \Var(Y) + 2\Cov(X,Y)
+} %\mymath
+
+\obeylines
+$\E\left(\displaystyle\sum X_i\right)=\sum \E(X_i)$
+\vspace{6pt}
+$\Var\left(\displaystyle\sum X_i\right)=\sum \Var(X_i)$ if $X_i$ are independent.
+
+\sh{Correlation coefficient}
+\note{\Large Revise Properly!!!!!!}
+
+\includegraphics[scale=0.5]{./img/434.jpg}
+
+\sh{Conditional Expectation and Prediction}
+\includegraphics[scale=0.5]{./img/441.jpg}
+\includegraphics[scale=0.5]{./img/442.jpg}
+\includegraphics[scale=0.5]{./img/443.jpg}
 
 
+{\bf Law of total expectation}
+\includegraphics[scale=0.5]{./img/44A.jpg}
 
+
+\sh{Moment-generating functions}
+\includegraphics[scale=0.5]{./img/451.jpg}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

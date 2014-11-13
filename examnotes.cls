@@ -60,6 +60,8 @@
 \newcommand\header[1]{\fancyhead[L]{\scriptsize\bf\center #1}}
 \newcommand\h[1]{{\vspace{0.5\baselineskip}\centering\subheadingfont\Large#1\par\vspace{0.2\baselineskip}}}
 \titlespacing\section{0pt}{6pt}{-\parskip}
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+
 \newcommand\sh[1]{\section*{#1}}
 \newcommand\ssh[1]{\subsection*{#1}}
 \newcommand\red[1]{{\requiredfont #1}}

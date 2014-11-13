@@ -57,6 +57,7 @@
 \newcommand\h[1]{{\vspace{0.5\baselineskip}\centering\subheadingfont\Large#1\par\vspace{0.2\baselineskip}}}
 \titlespacing\section{0pt}{6pt}{-\parskip}
 \newcommand\sh[1]{\section*{#1}}
+\newcommand\ssh[1]{\subsection*{#1}}
 \newcommand\red[1]{{\requiredfont #1}}
 \newcommand\note[1]{{\small\requiredfont #1}}
 \newcommand\ra{{\symbols →\hspace{0.3em}}\hangindent=0.85em}

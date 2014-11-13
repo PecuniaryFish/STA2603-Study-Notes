@@ -4,6 +4,10 @@
 \newcommand{\Var}{\mathrm{Var}}
 \newcommand{\Cov}{\mathrm{Cov}}
 
+\usepackage{sectsty}
+\sectionfont{\Large\raggedright}
+\subsectionfont{\raggedright}
+
 \header{STA2603 Distribution Theory II}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -259,6 +263,23 @@ $\Var\left(\displaystyle\sum X_i\right)=\sum \Var(X_i)$ if $X_i$ are independent
 
 \sh{Moment-generating functions}
 \includegraphics[scale=0.5]{./img/451.jpg}
+\includegraphics[scale=0.5]{./img/452.jpg}
+\ra Same mgf then same distribution.
+\ra If the mgf can be determined it can be uniquely determines then probability distribution. 
+\ra The mgf provides an elegant way to compute the moments of a distribution.
+
+\vspace{6pt}
+\ssh{Calculating moments}
+\ra First principles
+\vspace{6pt}
+\rna Discreet: $\E(X^r)=\displaystyle\sum x^rp_X(x)$
+\vspace{6pt}
+\rna Continuous:  $\E(X^r)=\displaystyle\int x^rf_X(x)$
+\vspace{6pt}
+\ra Using moment-generating function
+\vspace{6pt}
+\rna $M^{(r)}(0)=E(X^r)$ 
+\ra 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

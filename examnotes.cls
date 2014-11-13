@@ -33,6 +33,10 @@
 \usepackage[center]{titlesec}
 \usepackage{amsmath,amsfonts,amsthm}
 
+\usepackage{sectsty}
+\sectionfont{\Large\raggedright}
+\subsectionfont{\raggedright}
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -70,6 +74,10 @@
 \newcommand{\vp}{\vspace{1ex}}
 \newcommand\mymath[1]{\begin{math}\begin{aligned}[t]#1\end{aligned}\end{math}}
 \newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+
+\newcommand{\E}{\Epsilon}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % macros    macros    macros    macros   macros    macros    macros    macros   

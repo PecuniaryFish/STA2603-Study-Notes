@@ -16,7 +16,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \h{Study Unit 2}
 
-\ra Frequency Function (discreet)
+\ra Frequency Function (discreet) AKA Mass function
 \ra Density function (continuous).
 \ra Distribution function is cumulative density function
 
@@ -62,16 +62,21 @@ Indicator random variable \mymath{I_A(\omega)=\begin{cases} 1 & \omega \in A\\
 
 \sh{Binomial Distribution}
 
-The sum of independent Bernoulli variables is a binomial random variable. 
-To prove binomial probabilities sums to 1. Use finite binomial series expansion:
-\includegraphics[scale=0.6]{./img/2ber2.jpg}
-\vspace{-10pt}
-and therefore it is a series expansion of $[(1-p)+p]^n$
-\vspace{6pt}
+\ra The sum of independent Bernoulli variables is a binomial random variable. 
+\ra To prove binomial probabilities sums to 1. Use finite binomial series expansion:
+\rn{1} State binomial function sums to 1
+\rn{2} then given the binomial expansion of $(a+b)^n=\sum_{x=o}^n \binom{n}{x} a^{n-x}b^x$
+\rn{3} let $a=1-p$  and $b=p$
+\rn{4} Substitute above into $(a+b)^n$
+\rn{5} therefore $(1-p+p)^n=1^n=1$
+
 \sh{Geometric Distribution}
 
-To prove that geometric distribution sums to 1, use Taylor series at x=0
+\ra To prove that geometric distribution sums to 1, use Taylor series at x=0
 \includegraphics[scale=0.6]{./img/2geo.jpg}
+
+\ra To derive CDF
+\includegraphics[scale=0.5]{./img/2geomcdf.jpg}
 
 \sh{Negative Binomial Distribution}
 
@@ -172,9 +177,19 @@ if $X\mytilde N(\mu,\sigma^2)$ and $Y=aX+b$, then $Y\mytilde N(a\mu+b,a^2\sigma^
 \vspace{6pt}
 \includegraphics[scale=0.5]{./img/2stand.jpg}
 
-\includegraphics[scale=0.6]{./img/2fun1.jpg}
-\includegraphics[scale=0.6]{./img/2fun2.jpg}
+\ra 2 Methods
+\rn{1} Cumulative distribution function $F(x)$ method
+\rna find the {\bf CDF} of the transformed variable
+\rna then differentiate to find the density function
+\rna and specify the region
+\rn{2} Transformation method (Proposition B)
 
+\includegraphics[scale=0.6]{./img/2fun1.jpg}
+
+\includegraphics[scale=0.6]{./img/2fun2.jpg}
+\de{Use $D$ for generating pseudorandom numbers}
+
+\vspace{6pt}
 $[N(0,1)]^2\mytilde \chi^2_1$
 
 Weibull density: $\displaystyle\frac{\beta}{\alpha^\beta}x^{\beta-1}e^{-\left(\displaystyle\frac{x}{\alpha}\right)^\beta}$

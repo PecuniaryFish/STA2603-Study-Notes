@@ -38,6 +38,15 @@ Probability of x successes in a sample size $m$ from sample space $n$ and a subs
 
 $\binom{n}{x} = \displaystyle\frac{n!}{x!(n-x)!}$
 
+\vspace{6pt}
+\ra $P(X>x)=1-P(X\le x)$
+\vspace{6pt}
+\ra To prove is distribution: 
+\rn{1} State probabilities are all non-negative.
+\rn{2} Show probabilities all sum to 1.
+ 
+\includegraphics[scale=0.5]{./img/2contright.jpg}
+
 \sh{Bernoulli Random Variables}
 
 \vspace{6pt}
@@ -49,24 +58,26 @@ Indicator random variable \mymath{I_A(\omega)=\begin{cases} 1 & \omega \in A\\
 } %\mymath
 \obeylines
 
-\includegraphics[scale=0.6]{./img/2ber.jpg}
+\includegraphics[scale=0.5]{./img/2ber.jpg}
 
 \sh{Binomial Distribution}
 
 The sum of independent Bernoulli variables is a binomial random variable. 
 To prove binomial probabilities sums to 1. Use finite binomial series expansion:
-\includegraphics[scale=0.7]{./img/2ber2.jpg}
+\includegraphics[scale=0.6]{./img/2ber2.jpg}
 \vspace{-10pt}
 and therefore it is a series expansion of $[(1-p)+p]^n$
 \vspace{6pt}
 \sh{Geometric Distribution}
 
 To prove that geometric distribution sums to 1, use Taylor series at x=0
-\includegraphics[scale=0.7]{./img/2geo.jpg}
+\includegraphics[scale=0.6]{./img/2geo.jpg}
 
 \sh{Negative Binomial Distribution}
 
 A negative binomial random variable can be expressed as the sum of \emph{r} independent geometric variables.
+
+\includegraphics[scale=0.5]{./img/2negbinom.jpg}
 
 {\sh{Hypergeometric distribution}
 \vspace{6pt}
@@ -88,7 +99,10 @@ To show it is a frequency function:
 
 Poisson distribution can be used to approximate binomial distribution, if \emph{n} is large and \emph{p} is small.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \h{Continuous Random Variables}
+
 \includegraphics[scale=0.7]{./img/2con1.jpg}
 \includegraphics[scale=0.7]{./img/2con2.jpg}
 \includegraphics[scale=0.7]{./img/2con3.jpg}
@@ -99,23 +113,35 @@ Poisson distribution can be used to approximate binomial distribution, if \emph{
 \includegraphics[scale=0.5]{./img/dent.jpg}
 
 
-The $p$th quantile: $F(x_p)=p$ \quad or $P(X\le x_p)=p$ \quad and $x_p=F^{-1}(p)$
+\ra The $p$th quantile: $F(x_p)=p$ \quad or $P(X\le x_p)=p$ \quad and $x_p=F^{-1}(p)$
+\ra $\ln(1)=0$
+\vspace{6pt}
+\ra $\displaystyle\int_0^\infty e^{-y} = 1$
 
 \sh{Exponential Density}
 
+\de{Memoryless proof}
+\includegraphics[scale=0.5]{./img/2memoryless.jpg}
+
 \sh{Gamma Density}
 
-Gamma function $\Gamma(a)=\displaystyle\int_0^\infty{x^{a-1}e^{-x}}$ \quad Properties $\Gamma(\alpha+1)=\alpha\Gamma(\alpha)$ \quad $\Gamma(\frac{1}{2})=\sqrt{\pi}$
-\quad $c^n\Gamma(n)=\displaystyle\int_0^\infty{x^{n-1}e^{-\displaystyle\frac{x}{c}}}$
+\de{Gamma function}
+\vspace{6pt}
+$\Gamma(a)=\displaystyle\int_0^\infty{x^{a-1}e^{-x}}$ \quad Properties $\Gamma(\alpha+1)=\alpha\Gamma(\alpha)$ \quad $\Gamma(\frac{1}{2})=\sqrt{\pi}$
+$c^n\Gamma(n)=\displaystyle\int_0^\infty{x^{n-1}e^{-\displaystyle\frac{x}{c}}}$
 
 $\Gamma(2) = 1$ \vspace{6pt}
 
 If $\alpha=1$ then it becomes exponential density
 If $\lambda=1$ then it is a one parameter gamma density
 
+
 \includegraphics[scale=0.4]{./img/2gam.jpg}
 
 \sh{Normal (Gaussian) distribution}
+
+\ra Standard normal CDF $= \Phi(X)$ 
+\ra Standard normal density $= \varphi(X)$
 
 \sh{Beta Density}
 
@@ -127,20 +153,24 @@ To prove density function:
 \includegraphics[scale=0.4]{./img/2bet3.jpg}
 \includegraphics[scale=0.5]{./img/2bet1.jpg}
 
+\ra If $m=n=1$ then becomes standard uniform distribution.
+
 \sh{Cauchy Density}
 
 \disobeylines
-
 \mymath{f(x)=\frac{1}{\pi}\left( \frac{1}{1+x^2}\right) \quad -\infty < x < \infty
 } %\mymath
 \obeylines
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \h{Functions of random Variables}
 
-Standard normal CDF $= \Phi(X)$ \quad Standard normal density $= \varphi(X)$
-
-{\bf Proposition A:}
+\de{Proposition A:}
+\vspace{6pt}
 if $X\mytilde N(\mu,\sigma^2)$ and $Y=aX+b$, then $Y\mytilde N(a\mu+b,a^2\sigma^2)$
+\vspace{6pt}
+\includegraphics[scale=0.5]{./img/2stand.jpg}
 
 \includegraphics[scale=0.6]{./img/2fun1.jpg}
 \includegraphics[scale=0.6]{./img/2fun2.jpg}

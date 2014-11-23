@@ -8,13 +8,13 @@
 
 \h{STA2603 Distribution Theory II}
 
-\ra Always specify the domain of the function!
+\ra Always specify the domain of the function, including elsewhere, always even in the intermediate stages!
 \ra Always specify the parameters when identifying the distribution!
 \vspace{6pt}
 \includegraphics[scale=0.5]{./img/expan.jpg}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\h{Study Unit 2}
+\h{Study Unit 2: Random Variables}
 
 \ra Frequency Function (discreet) AKA Mass function
 \ra Density function (continuous).
@@ -195,7 +195,7 @@ $[N(0,1)]^2\mytilde \chi^2_1$
 Weibull density: $\displaystyle\frac{\beta}{\alpha^\beta}x^{\beta-1}e^{-\left(\displaystyle\frac{x}{\alpha}\right)^\beta}$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\h{Study Unit 3}
+\h{Study Unit 3:: Joint Distributions}
 
 \sh{Discreet Random Variables}
 
@@ -204,33 +204,56 @@ Weibull density: $\displaystyle\frac{\beta}{\alpha^\beta}x^{\beta-1}e^{-\left(\d
 
 \sh{Continuous Random Variables}
 
-Marginal density.
+\includegraphics[scale=0.4]{./img/3con1.jpg}
+\includegraphics[scale=0.4]{./img/3con2.jpg}
 
-\includegraphics[scale=0.4]{./img/3con1.jpg}                                         
-\includegraphics[scale=0.4]{./img/3con2.jpg}                                         
-\includegraphics[scale=0.4]{./img/3con3.jpg}                                         
+\ssh{Marginal density}
+\includegraphics[scale=0.4]{./img/3con3.jpg}
 
 \red{Marginals sum to 1}
 
-Joint cumulative distribution.
+\ssh{Joint cumulative distribution.}
 
 \includegraphics[scale=0.4]{./img/3con4.jpg}                                         
 
-\sh{Independent Random variables}
+\ssh{Independent Random variables}
 
 Independent if $F(x,y)=F_X(x)F_Y(y)$
 
-Two discreet random variables will be independent if th their joint mass function factors.
+Two discreet random variables will be independent if their joint mass function factors.
 
 \sh{Conditional Distributions}
 
-Discreet:
+\de{Probabilities}
+\includegraphics[scale=0.5]{./img/354.jpg}
+\ra with independence 
+\includegraphics[scale=0.5]{./img/353.jpg}
 
+\vspace{6pt}
+\de{Discreet:}
+\includegraphics[scale=0.5]{./img/351.jpg}
 The law of total probability. $p_X(x)=\displaystyle\sum_y{p_{X|Y}(x|y)p_Y(y)}$
 
-Continuous:
-
+\de{Continuous:}
+\includegraphics[scale=0.5]{./img/352.jpg}
 The law of total probability. $f_Y(y)=\displaystyle\int_{-\infty}^\infty{f_{Y|X}(y|x)f_X(x)\,dx}$
+
+\ssh{Functions of Jointly Distributed Random Variables}
+
+\de{Discreet Convolution}
+\includegraphics[scale=0.5]{./img/361.jpg}
+
+\vspace{20pt}
+\de{Continuous Convolution}
+\includegraphics[scale=0.5]{./img/362.jpg}
+
+\ssh{Method of cumulative distribution functions}
+\includegraphics[scale=0.5]{./img/363.jpg}
+
+\includegraphics[scale=0.5]{./img/364.jpg}
+\includegraphics[scale=0.5]{./img/365.jpg}
+\includegraphics[scale=0.5]{./img/366.jpg}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \h{Study Unit 4}
